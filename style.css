@@ -10,8 +10,18 @@ body{
     justify-content: center;
     align-items: center;
     width: 500px;
-    background-color: red;
+    background-color: black;
     width: 100vw;
+}
+.title{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.title_line{
+   inline-size: 20px ;
+
 }
 .section{
     color: white;
@@ -25,6 +35,7 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .details{
     width: 400px;
@@ -32,8 +43,35 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    
+}
+.job{
+    margin-bottom: 15px;
 }
 .person1{
-   height: 50px;
+   height: 60px;
     border-radius: 50%;
+}
+
+.btn_container{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+button{
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+}
+button:active{
+    background-color: rgb(88, 83, 83)  ;
+}
+
+button i{
+    width: fit-content;
+    
+}
+
+.random_btn{
+    -top: 20px;
 }
