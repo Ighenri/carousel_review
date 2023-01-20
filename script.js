@@ -44,6 +44,7 @@ window.addEventListener("DOMContentLoaded", function () {
     showPerson()
 })
 
+// created new function inorder to reuse the function
 function showPerson() {
     const item = reviews[currentItem];
     /* img.src = item.img */
@@ -52,7 +53,28 @@ function showPerson() {
     info.textContent = item.text;
 }
 
+// Next Button 
+
 nextBtn.addEventListener('click', function () {
     currentItem++;
+    if(currentItem > reviews.length - 1){
+        currentItem=0
+    }
+    showPerson()
+})
+
+// Prev Button
+prevBtn.addEventListener('click', function () {
+    currentItem--;
+    if (currentItem < 0) {
+    currentItem = reviews.length - 1
+    }
+    showPerson()
+})
+
+//Random Person
+randomBtn.addEventListener('click', function () {
+    currentItem = Math.floor(Math.random() * reviews.length);
+
     showPerson()
 })
